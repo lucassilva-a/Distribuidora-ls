@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | Distribuidora LS</title>
+  <link rel="icon" type="image/svg+xml" href="favicon/icons8-copo-g-48.png">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/newprod.css">
+  <!-- css produto coloquei par pegar o footer-->
+  <link rel="stylesheet" href="css/produto.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <div class="logo-icone">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 22h8"></path>
+              <path d="M12 15v7"></path>
+              <path d="M19 3H5l2 9a5 5 0 0 0 10 0l2-9Z"></path>
+            </svg>
+          </div>
+          <div class="logo-texto">
+            <h1>DISTRIBUIDORA <span>LS</span></h1>
+            <small>BEBIDAS & TABACARIA</small>
+          </div>
+        </a>
+      </div>
+
+            <nav>
+        <div class="nav-links">
+          <a href="index.html">Início</a>
+          <a href="produto.html">Catálogo</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="nav-acoes">
+          <a href="login.html" class="btn-entrar">Entrar</a>
+          <a href="new.html" class="btn-nav">Criar Conta</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+    <main>
+    <section class="auth-section">
+      <div class="auth-card">
+        <div class="auth-header">
+          <div class="auth-icone-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h2>Área do Cliente</h2>
+          <p>Entre na sua conta para agilizar seu delivery</p>
+        </div>
+
+        <form onsubmit="fazerLogin(event)">
+          <div class="form-grupo">
+            <label for="emailLogin">E-mail ou WhatsApp</label>
+            <div class="input-wrapper">
+              <span class="input-icon">📱</span>
+              <input type="text" id="emailLogin" placeholder="(61) 99999-9999 ou seu e-mail" required>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="senhaLogin">Senha</label>
+            <div class="input-wrapper">
+              <span class="input-icon">🔑</span>
+              <input type="password" id="senhaLogin" placeholder="Digite sua senha" required>
+              <button type="button" class="btn-ver-senha" onclick="alternarSenha()" title="Mostrar/Ocultar senha">👁️</button>
+            </div>
+          </div>
+
+          <div class="form-opcoes">
+            <label class="checkbox-label">
+              <input type="checkbox"> Lembrar de mim
+            </label>
+            <a href="https://wa.me." target="_blank">Esqueci a senha</a>
+          </div>
+
+          <button type="submit" class="btn-auth">Entrar na Conta →</button>
+        </form>
+
+        <div class="auth-divisor">
+          <span>ou</span>
+        </div>
+
+        <div class="auth-footer">
+          <p>Ainda não tem cadastro? <a href="new.html">Criar conta grátis</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    <div class="container footer-grid">
+      <!-- Coluna 1: Marca e Aviso -->
+      <div class="footer-col">
+        <h3 class="footer-logo">DISTRIBUIDORA <span>LS</span></h3>
+        <p class="footer-desc">
+          Bebidas geladas, combos de whisky e tabacaria completa com entrega rápida e segura na sua região.
+        </p>
+        <div class="aviso-idade">
+          🔞 Venda proibida para menores de 18 anos. Beba com moderação.
+        </div>
+      </div>
+
+      <!-- Coluna 2: Navegação -->
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul class="footer-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produto.html">Catálogo Completo</a></li>
+          <li><a href="login.html">Área do Cliente</a></li>
+          <li><a href="new.html">Criar Conta</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Atendimento e Contato -->
+      <div class="footer-col">
+        <h4>Atendimento</h4>
+        <ul class="footer-lista info-contato">
+          <li>📍 Brazlândia - DF e Região</li>
+          <li>🕒 Seg a Dom: 09h às 23h</li>
+          <li>
+            <a href="https://wa.me." target="_blank" class="link-destaque">
+              📱 (61) 99999-9999 (WhatsApp)
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">📸 @distribuidorals</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Pagamento -->
+      <div class="footer-col">
+        <h4>Formas de Pagamento</h4>
+        <div class="pagamentos-badges">
+          <span>💠 Pix</span>
+          <span>💳 Crédito</span>
+          <span>💳 Débito</span>
+          <span>💵 Dinheiro</span>
+        </div>
+        <p class="nota-entrega">🛵 Consulte taxa de entrega para o seu setor.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 Distribuidora LS - Todos os direitos reservados.</p>
+        <p class="dev-credito">Desenvolvido por <strong>Lucas</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function fazerLogin(event) {
+      event.preventDefault();
+      const email = document.getElementById('emailLogin').value;
+      alert('Bem-vindo de volta à Distribuidora LS! Redirecionando para o catálogo...');
+      window.location.href = 'produto.html';
+    }
+    function alternarSenha() {
+  const campo = document.getElementById('senhaLogin');
+  campo.type = (campo.type === 'password') ? 'text' : 'password';
+}
+
+  </script>
+</body>
+</html>

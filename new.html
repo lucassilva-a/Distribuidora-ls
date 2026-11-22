@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Conta | Distribuidora LS</title>
+  <link rel="icon" type="image/svg+xml" href="favicon/icons8-copo-g-48.png">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/newprod.css">
+  <!-- css produto coloquei par pegar o footer-->
+  <link rel="stylesheet" href="css/produto.css">
+  
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html" class="logo-link">
+          <div class="logo-icone">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 22h8"></path>
+              <path d="M12 15v7"></path>
+              <path d="M19 3H5l2 9a5 5 0 0 0 10 0l2-9Z"></path>
+            </svg>
+          </div>
+          <div class="logo-texto">
+            <h1>DISTRIBUIDORA <span>LS</span></h1>
+            <small>BEBIDAS & TABACARIA</small>
+          </div>
+        </a>
+      </div>
+
+      <nav>
+        <div class="nav-links">
+          <a href="index.html">Início</a>
+          <a href="produto.html">Catálogo</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="nav-acoes">
+          <a href="login.html" class="btn-entrar">Entrar</a>
+          <a href="new.html" class="btn-nav">Criar Conta</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="auth-section">
+      <div class="auth-card" style="max-width: 480px;">
+        <div class="auth-header">
+          <div class="auth-icone-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <line x1="20" y1="8" x2="20" y2="14"></line>
+              <line x1="23" y1="11" x2="17" y2="11"></line>
+            </svg>
+          </div>
+          <h2>Crie sua Conta</h2>
+          <p>Cadastre-se para receber promoções de combos e pedir com 1 clique</p>
+        </div>
+
+        <form onsubmit="cadastrarUsuario(event)">
+          <div class="form-grupo">
+            <label for="nomeCadastro">Nome Completo</label>
+            <div class="input-wrapper">
+              <span class="input-icon">👤</span>
+              <input type="text" id="nomeCadastro" placeholder="Ex: João da Silva" required>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="whatsCadastro">WhatsApp (com DDD)</label>
+            <div class="input-wrapper">
+              <span class="input-icon">📱</span>
+              <input type="tel" id="whatsCadastro" placeholder="(61) 99999-9999" required>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="emailCadastro">E-mail</label>
+            <div class="input-wrapper">
+              <span class="input-icon">✉️</span>
+              <input type="email" id="emailCadastro" placeholder="seuemail@exemplo.com" required>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="enderecoCadastro">Endereço Padrão para Entrega</label>
+            <div class="input-wrapper">
+              <span class="input-icon">📍</span>
+              <input type="text" id="enderecoCadastro" placeholder="Quadra, Rua, Número, Setor" required>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="senhaCadastro">Crie uma Senha</label>
+            <div class="input-wrapper">
+              <span class="input-icon">🔑</span>
+              <input type="password" id="senhaCadastro" placeholder="Mínimo 6 caracteres" minlength="6" required>
+              <button type="button" class="btn-ver-senha" onclick="alternarSenhaCadastro()" title="Mostrar/Ocultar senha">👁️</button>
+            </div>
+          </div>
+
+          <div class="form-opcoes">
+            <label class="checkbox-label">
+              <input type="checkbox" required>
+              <span>Declaro que tenho <strong>18 anos ou mais</strong> e concordo com os termos da Distribuidora LS.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-auth">Finalizar Cadastro →</button>
+        </form>
+
+        <div class="auth-divisor">
+          <span>ou</span>
+        </div>
+
+        <div class="auth-footer">
+          <p>Já possui cadastro? <a href="login.html">Fazer login</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-logo">DISTRIBUIDORA <span>LS</span></h3>
+        <p class="footer-desc">
+          Bebidas geladas, combos de whisky e tabacaria completa com entrega rápida e segura na sua região.
+        </p>
+        <div class="aviso-idade">
+          🔞 Venda proibida para menores de 18 anos. Beba com moderação.
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul class="footer-lista">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="produto.html">Catálogo Completo</a></li>
+          <li><a href="login.html">Área do Cliente</a></li>
+          <li><a href="new.html">Criar Conta</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Atendimento</h4>
+        <ul class="footer-lista info-contato">
+          <li>📍 Brazlândia - DF e Região</li>
+          <li>🕒 Seg a Dom: 09h às 23h</li>
+          <li>
+            <a href="https://wa.me." target="_blank" class="link-destaque">
+              📱 (61) 99999-9999 (WhatsApp)
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">📸 @distribuidorals</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Formas de Pagamento</h4>
+        <div class="pagamentos-badges">
+          <span>💠 Pix</span>
+          <span>💳 Crédito</span>
+          <span>💳 Débito</span>
+          <span>💵 Dinheiro</span>
+        </div>
+        <p class="nota-entrega">🛵 Consulte taxa de entrega para o seu setor.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-content">
+        <p>© 2026 Distribuidora LS - Todos os direitos reservados.</p>
+        <p class="dev-credito">Desenvolvido por <strong>Lucas</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function alternarSenhaCadastro() {
+      const campo = document.getElementById('senhaCadastro');
+      campo.type = (campo.type === 'password') ? 'text' : 'password';
+    }
+
+    function cadastrarUsuario(event) {
+      event.preventDefault();
+      const nome = document.getElementById('nomeCadastro').value;
+      const endereco = document.getElementById('enderecoCadastro').value;
+
+      // Salva o endereço no navegador para já aparecer preenchido no carrinho
+      localStorage.setItem('enderecoLS', endereco);
+      localStorage.setItem('clienteLS', nome);
+
+      alert('Cadastro realizado com sucesso, ' + nome + '! Seu endereço já ficou salvo para os pedidos.');
+      window.location.href = 'produto.html';
+    }
+  </script>
+</body>
+</html>
